@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>B3A · Fu Tai Estate ↔ Shenzhen Bay Port</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&amp;display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: dark;
@@ -46,6 +49,42 @@
     display: flex;
     flex-direction: column;
     gap: clamp(22px, 4vw, 30px);
+  }
+
+  /* ---------- Masthead ---------- */
+
+  .masthead {
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+  }
+
+  .wordmark {
+    margin: 0;
+    font-family: "Playfair Display", "Iowan Old Style", Palatino, Georgia, serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(24px, 4.8vw, 36px);
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    color: var(--accent);
+  }
+
+  .masthead::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    margin-bottom: 0.55em;
+    background: linear-gradient(90deg, rgba(108, 182, 255, 0.5), transparent);
+  }
+
+  @supports ((background-clip: text) or (-webkit-background-clip: text)) {
+    .wordmark {
+      background: linear-gradient(100deg, #f4f9ff 0%, #a9d3ff 45%, #4d8dff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
   }
 
   /* ---------- Header ---------- */
@@ -402,6 +441,10 @@
 </head>
 <body>
 <main class="app">
+
+  <div class="masthead">
+    <p class="wordmark">NCT wish tws</p>
+  </div>
 
   <header class="hero">
     <div class="topline">
