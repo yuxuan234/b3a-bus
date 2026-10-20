@@ -7,14 +7,14 @@
 <style>
   :root {
     color-scheme: dark;
-    --bg: #080c18;
+    --bg: #060d1c;
     --panel: rgba(255, 255, 255, 0.055);
     --panel-strong: rgba(255, 255, 255, 0.09);
     --line: rgba(255, 255, 255, 0.11);
     --text: #eef2ff;
     --muted: #93a0bd;
-    --accent: #ffd23f;
-    --accent-ink: #1a1400;
+    --accent: #6cb6ff;
+    --accent-ink: #061427;
     --ok: #4ade80;
     --err: #fb7185;
   }
@@ -28,8 +28,8 @@
   body {
     margin: 0;
     background:
-      radial-gradient(900px 600px at 12% -10%, rgba(255, 210, 63, 0.15), transparent 60%),
-      radial-gradient(800px 520px at 108% 8%, rgba(64, 120, 255, 0.18), transparent 62%),
+      radial-gradient(900px 600px at 12% -10%, rgba(108, 182, 255, 0.18), transparent 60%),
+      radial-gradient(800px 520px at 108% 8%, rgba(56, 96, 255, 0.22), transparent 62%),
       var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
@@ -71,7 +71,7 @@
     font-weight: 800;
     letter-spacing: 0.02em;
     line-height: 1;
-    box-shadow: 0 10px 30px -12px rgba(255, 210, 63, 0.7);
+    box-shadow: 0 10px 30px -12px rgba(108, 182, 255, 0.65);
   }
 
   .operator {
@@ -189,10 +189,10 @@
   }
 
   .card.primary {
-    background: linear-gradient(135deg, #ffe98f 0%, var(--accent) 55%, #ffc21f 100%);
+    background: linear-gradient(135deg, #b9e0ff 0%, var(--accent) 55%, #2f86f0 100%);
     color: var(--accent-ink);
     border-color: transparent;
-    box-shadow: 0 22px 60px -28px rgba(255, 210, 63, 0.65);
+    box-shadow: 0 22px 60px -28px rgba(108, 182, 255, 0.55);
   }
 
   .card.hidden { display: none; }
@@ -351,7 +351,7 @@
     box-shadow: 0 0 0 4px rgba(251, 113, 133, 0.12);
   }
 
-  .dot.busy { background: var(--accent); box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.12); }
+  .dot.busy { background: var(--accent); box-shadow: 0 0 0 4px rgba(108, 182, 255, 0.14); }
 
   .refresh {
     margin-left: auto;
